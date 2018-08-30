@@ -1,190 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test Page: Don't Panic</title>
+    <title>FALCONI</title>
     <meta charset="utf-8">
     <style>
       /* GLOBAL STYLES */
       html, body {
-        margin: 0;
         padding: 0;
+        font-size: 16px
       }
+
       h1 {
-        font-size: 7vw;
-        margin-top: 0;
-      }
-      a {
-        color: #f00;
+        font-size: 10vh;
+        margin-top: 5vh;
       }
 
-      /* HERO STYLES */
-      .full-hero {
-        background-color: #c7dbfc;
-        height: 50vh;
+      .date{
+        font-style: italic;
       }
 
-      /* SOCIAL STYLES */
-      .social-link {
-        background: rgba(150, 150, 150, 0.5);
-        border-radius: 99px;
-        box-sizing: border-box;
-        color: #fff;
-        display: inline-block;
-        font-family: helvetica, arial, sans;
-        font-size: 1rem;
-        font-weight: bold;
-        height: 2.5em;
-        line-height: 1;
-        padding-top: 0.85em;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        width: 2.5em;
+      p{
+        width: 40vh;
       }
-      .social-list {
-        list-style: none;
-        padding: 0;
+
+      p.title{
+        border-bottom: .08vw solid gray;
+        border-top: .08vw solid gray;
         text-align: center;
       }
-      .social-list > li {
-        display: inline-block;
-        margin: 0 0.5em;
-      }
 
-      /* BIO STYLES */
-      .bio-wrapper {
-        font-size: 24px;
-        margin: auto;
-        max-width: 960px;
-        overflow: hidden;
-      }
-      .bio-box {
-        border: 1px solid black;
-        border-color: black black red;
-        box-sizing: border-box;
+      div{
+        margin-left: 6vh;
+        width: 60vh;
+        display: inline;
         float: left;
-        font-size: 1rem;
-        margin: 40px 1% 0;
-        padding: 0 2% 2%;
-        width: 23%;
       }
-      .bio-box h3 {
-        color: #fff;
-        font-size: 1.5em;
-        margin: -40px 0 1em;
-        text-align: center;
-      }
-      .bio-box img {
+
+      .right{
+        background-color: teal;
+        display: inline;
+        float: right;
+        position: fixed;
         width: 100%;
+        height: 101vh;
+        margin-top: -10px;
+        margin-right: 0;
+        height: ;
       }
-      .bio-copy {
-        font-size: 1em;
-        line-height: 1.5;
-      }
-      .bio-copy a {
-        color: green;
-      }
+
     </style>
   </head>
   <body>
-    <div class="full-hero hero-home">
-      <h1>I'm an h1</h1>
-      <ul class="social-list">
-        <li>
-          <a href="http://example.com/" class="social-link">Fb</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="social-link">Tw</a>
-        </li>
-        <li>
-          <a href="http://example.com/" class="social-link">Gh</a>
-        </li>
-      </ul>
-    </div>
-    <h2>I'm an h2</h2>
-    <div class="bio-wrapper">
-      <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400">
-        <h3>Michael Hartl</h3>
-        <a href="http://twitter.com/mhartl" class="social-link">Tw</a>
-        <div class="bio-copy">
-          <p>
-            Known for his dazzling charm, rapier wit, and unrivaled humility,
-            Michael is the creator of the
-            <a href="http://railstutorial.org/">Ruby on Rails
-            Tutorial</a> and principal author of the
-            <a href="https://learnenough.com/">
-            Learn Enough to Be Dangerous</a> introductory sequence.
-          </p>
+    <div>
+    <h1> FALCONI </h1>
 
-          <p>
-            Michael is also notorious as the founder of
-            <a href="http://tauday.com/">Tau Day</a> and author of
-            <a href="http://tauday.com/tau-manifesto"><em>The Tau
-            Manifesto</em></a>, but rumors that he's secretly a supervillain
-            are slightly exaggerated.
-          </p>
-        </div>
-      </div>
-      <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400">
-        <h3>Lee Donahoe</h3>
-        <a href="https://twitter.com/leedonahoe" class="social-link">Tw</a>
-        <div class="bio-copy">
-          <p>
-            When he's not literally swimming with sharks or hunting powder
-            stashes on his snowboard, you can find Lee in front of his computer
-            designing interfaces, doing front-end development, or writing some of
-            the interface-related Learn Enough tutorials.
-          </p>
-        </div>
-      </div>
-      <div class="bio-box">
-        <img src="http://placekitten.com/g/400/400">
-        <h3>Nick Merwin</h3>
-        <a href="https://twitter.com/nickmerwin" class="social-link">Tw</a>
-        <div class="bio-copy">
-          <p>
-            You may have seen him shredding guitar live with Capital Cities on
-            Jimmy Kimmel, Conan, or The Ellen Show, but rest assured Nick is a
-            true nerd at heart. He's just as happy shredding well-spec'd lines
-            of code from a tour bus as he is from his kitchen table.
-          </p>
-        </div>
-      </div>
-      <div class="bio-box">
-        <h3>??</h3>
-        <p>
-          The Future
-        </p>
-      </div>
-    </div>
-    <p>
-      Learn Enough to Be Dangerous is a leader in the movement to teach the
-      world <em>technical sophistication</em>, which includes both "hard
-      skills" like coding, command lines, and version control, and "soft
-       skills" like guessing keyboard shortcuts, Googling error messages, and
-      knowing when to just reboot the darn thing.
+    <p class= "date">
+        Thursday, 30 August 2018
     </p>
+
     <p>
-      We believe there are <strong>at least a billion people</strong> who can
-      benefit from learning technical sophistication, probably more. To join
-      our movement,
-      <a href="https://learnenough.com/#email_list">sign up for our official
-      email list</a> now.
+      <p class="title" "poem">TODAY</p>
+        Livings wait to be sold - we have forgotten how to forge.  </br>
+        Cashing living for livings, we go searching </br>
+        for roots that may withstand those indifferent gasps of somber society. </br>
+        Circumstantially, we fix on lots to erect ourselves upon -  </br>
+        as if Probability didn’t forge from something close to nothing.  </br>
+          </br>
+        Mother Nature, </br>
+        daughter of Time, </br>
+        breathes before us: </br>
+        a cloud ends to begin, </br>
+        a stain rejoices at an excavated smile, </br>
+        and a steady breeze ventures to embrace folds in space, </br>
+        each, exhaling moored fragments of wisdom. </br>
+          </br>
+        A tree,  </br>
+        like a period of a forgotten verse, is someone and anyone  </br>
+        where God’s pen planted an end to a sentence of earth - </br>
+        like the magnitude of all pasts </br>
+        is today. </br>
+
+    </br>
+     </br>
+
+        <p class="title" "poem">PAINTING</p>
+        The canvas is worked brown</br>
+        within a frame of green,</br>
+          </br>
+        sloping veins are etched to be darkened </br>
+        by glistening voyages of domesticated water, </br>
+         </br>
+        and paint is buried  </br>
+          </br>
+        to be rendered by strokes of life </br>
+        and those who know sustenance </br>
+        in color. </br>
     </p>
-    <h3>Background</h3>
-    <p>
-      Learn Enough to Be Dangerous is an outgrowth of the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> and the
-      <a href="http://www.softcover.io/">Softcover publishing platform</a>.
-      This page is part of the sample site for
-      <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and
-      Layout to Be Dangerous</em></a>, which teaches the basics of
-      <strong>C</strong>ascading <strong>S</strong>tyle
-      <strong>S</strong>heets, the language that allows web pages to be styled.
-      Other related tutorials can be found at
-      <a href="https://learnenough.com/">learnenough.com</a>.
-    </p>
+  </div>
+  <div class="right">
+
+  </div>
   </body>
 </html>
