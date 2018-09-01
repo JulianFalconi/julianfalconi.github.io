@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript">
+          var clicks = 0;
+          function onClick() {
+              clicks += 1;
+              document.getElementById("clicks").innerHTML = clicks;
+          };
+    </script>
     <title>J. FALCONI</title>
     <meta charset="utf-8">
     <style>
@@ -12,7 +19,7 @@
       }
 
       h1 {
-        font-size: 5em;
+        font-size: 4.5em;
         margin-top: .5em;
         text-align: center;
       }
@@ -58,6 +65,18 @@
         margin-top: .65em;
       }
 
+      .right1{
+        color: white;
+        text-align: center;
+        margin-top: 3em;
+      }
+
+      .right2{
+        color: white;
+        text-align: center;
+        margin-top: 5em;
+      }
+
       a{
         color: white;
       }
@@ -69,6 +88,10 @@
 
     <h1> J. FALCONI </h1>
 
+    <button type="button" onClick="onClick()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+<!--
     <p class= "date">
         Friday, 31 August 2018
     </p>
@@ -87,6 +110,7 @@
       </br></br>
         #whoneedsfacetweetagram<3</br>
       </br></br>
+-->
 
     <p class= "date">
         Thursday, 30 August 2018
@@ -145,9 +169,9 @@
     </p>
   </div>
   <div class="right">
-  <h1 CLASS="rightt"> IS CODING... </br> </br> THE LIKE BUTTON</h1>
-  </br>
-  <h2 CLASS="rightt"> WAS RECENTLY WRITING...  </br> </br>
+  <h1 CLASS="rightt"> IS WRITING... </h1>
+  <h1 CLASS="right1">A SHORT STORY</h1>
+  <h2 CLASS="right2"> WAS RECENTLY WRITING...</br>
     <a href="https://julianfalconi.github.io/poems.html">POEMS</a> </h2>
   </div>
   </body>
