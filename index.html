@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function clickCounter() {
+          if(typeof(Storage) !== "undefined") {
+              if (localStorage.clickcount) {
+                  localStorage.clickcount = Number(localStorage.clickcount)+1;
+              } else {
+                  localStorage.clickcount = 1;
+              }
+              document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+          } else {
+              document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+      }
+</script>
     <title>J. FALCONI</title>
     <meta charset="utf-8">
     <style>
@@ -64,6 +78,12 @@
   </head>
   <body>
     <div>
+
+      <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+      <div id="result"></div>
+      <p>Click the button to see the counter increase.</p>
+      <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
     <h1> J. FALCONI </h1>
 
     <p class= "date">
@@ -72,18 +92,18 @@
 
   <p class="title" "poem">THE LIKE BUTTON</p>
 
- Rules of use: </br>
- - To "Like" click anywhere in the page. </br>
- - Likes will be tallied here -> </br>
- - Like as many times as you want! </br>
-</br>
- *to delay like inflation I am limiting my mother </br>
- to 100 likes a month.
- </br> </br>
- Boy, am I gonna be cool after this.</br>
-</br></br>
-  #whoneedsfacetweetagram<3</br>
-</br></br>
+       Details of use: </br>
+       - To "Like" click anywhere in the white half of the site. </br>
+       - Likes will be tallied here -> </br>
+       - Like as many times as you want! </br>
+      </br>
+       *to delay like inflation I am limiting my mother </br>
+       to 100 likes a month.
+       </br> </br>
+       Boy, am I gonna be cool after this.</br>
+      </br></br>
+        #whoneedsfacetweetagram<3</br>
+      </br></br>
 
     <p class= "date">
         Thursday, 30 August 2018
