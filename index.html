@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-    <!--  function clickCounter() {
-          if(typeof(Storage) !== "undefined") {
-              if (localStorage.clickcount) {
-                  localStorage.clickcount = Number(localStorage.clickcount)+1;
-              } else {
-                  localStorage.clickcount = 1;
-              }
-              document.getElementById("result").innerHTML = "Likes:" + localStorage.clickcount;
-          } else {
-              document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-          }
-      }
-      -->
-</script>
     <title>J. FALCONI</title>
     <meta charset="utf-8">
     <style>
@@ -23,7 +8,7 @@
       html, body {
         padding: 0;
         font-size: 16px;
-        overflow: hidden;
+
       }
 
       h1 {
@@ -48,20 +33,22 @@
       }
 
       div{
-        margin-left: 5em;
-        width: 30em;
+        width: 28em;
         display: inline;
         float: left;
+        padding-left: 5em;
+        padding-right: 5em;
       }
 
       .right{
+        width: 31em;
+        display: inline;
+        float: left;
         background-color: teal;
         display: inline;
         float: right;
         position: fixed;
-        width: 50%;
         margin-top: -10px;
-        margin-right: 0;
         height: 101%;
       }
 
@@ -79,10 +66,7 @@
   </head>
   <body>
     <div>
-      <!--
-      <p><button onclick="clickCounter()" type="button">Like</button></p>
-      <div id="result"></div>
-    -->
+
     <h1> J. FALCONI </h1>
 
     <p class= "date">
@@ -161,7 +145,7 @@
     </p>
   </div>
   <div class="right">
-  <h1 CLASS="rightt"> IS CURRENTLY CODING... </br> </br> THE LIKE BUTTON</h1>
+  <h1 CLASS="rightt"> IS CODING... </br> </br> THE LIKE BUTTON</h1>
   </br>
   <h2 CLASS="rightt"> WAS RECENTLY WRITING...  </br> </br>
     <a href="https://julianfalconi.github.io/poems.html">POEMS</a> </h2>
