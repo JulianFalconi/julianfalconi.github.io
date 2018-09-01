@@ -2,7 +2,7 @@
 <html>
   <head>
     <script>
-      function clickCounter() {
+    <!--  function clickCounter() {
           if(typeof(Storage) !== "undefined") {
               if (localStorage.clickcount) {
                   localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -14,6 +14,7 @@
               document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
           }
       }
+      -->
 </script>
     <title>J. FALCONI</title>
     <meta charset="utf-8">
@@ -21,33 +22,34 @@
       /* GLOBAL STYLES */
       html, body {
         padding: 0;
-        font-size: 16px
+        font-size: 16px;
+        overflow: hidden;
       }
 
       h1 {
-        font-size: 10vh;
-        margin-top: 5vh;
+        font-size: 5em;
+        margin-top: .5em;
         text-align: center;
       }
 
       .date{
         font-style: italic;
-        margin-left: -5vh;
+        margin-left: -5em;
       }
 
       p{
-        width: 40vh;
+        width: 12em;
       }
 
       p.title{
-        border-bottom: .08vw solid gray;
-        border-top: .08vw solid gray;
+        border-bottom: .08em solid gray;
+        border-top: .08em solid gray;
         text-align: center;
       }
 
       div{
-        margin-left: 10vh;
-        width: 58vh;
+        margin-left: 5em;
+        width: 30em;
         display: inline;
         float: left;
       }
@@ -58,7 +60,7 @@
         float: right;
         position: fixed;
         width: 50%;
-        height: 101vh;
+        height: 50.5em;
         margin-top: -10px;
         margin-right: 0;
         height: ;
@@ -67,7 +69,7 @@
       .rightt{
         color: white;
         text-align: center;
-        margin-top: 6.5vh;
+        margin-top: .65em;
       }
 
       a{
@@ -78,10 +80,10 @@
   </head>
   <body>
     <div>
-
+      <!--
       <p><button onclick="clickCounter()" type="button">Like</button></p>
       <div id="result"></div>
-
+    -->
     <h1> J. FALCONI </h1>
 
     <p class= "date">
