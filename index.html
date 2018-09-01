@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript">
-        var clicks = 0;
-        function onClick(){
-              clicks += 1;
-              document.getElementById("clicks").innerHTML = clicks;
-          };
-    </script>
     <title>J. FALCONI</title>
     <meta charset="utf-8">
     <style>
@@ -88,6 +81,14 @@
 
     <h1> J. FALCONI </h1>
 
+    <script type="text/javascript">
+        var clicks = 0;
+        function onClick(){
+              clicks += 1;
+              document.getElementById("clicks").innerHTML = clicks;
+          };
+    </script>
+    
     <button type="button" onClick="onClick()">Click me</button>
     <p>Clicks: <a id="clicks">0</a></p>
 
