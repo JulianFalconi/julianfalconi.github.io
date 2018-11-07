@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Little Lights</title>
+    <script type="text/javascript">
+            yepnope({
+           test : Modernizr.csstransforms,
+           yep: ['lib/turn.js', 'css/flipbook-html5.css']
+           nope : ['lib/turn.html4.js', 'css/flipbook-html4.css']
+      });
+
+    </script>
     <style media="screen">
 
       html{
@@ -28,5 +36,14 @@
     <img src="images/cover.jpg">
   </div>
 
+    <div id=”flipbook”>
+      <div>Page 1</div>
+      <div>Page 2</div>
+      <div>Page 3</div>
+      <div>Page 4</div>
+    </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
+  </script>
   </body>
 </html>
