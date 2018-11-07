@@ -1,58 +1,77 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Little Lights</title>
-    <script type="text/javascript">
-            yepnope({
-           test : Modernizr.csstransforms,
-           yep: ['lib/turn.js', 'css/flipbook-html5.css']
-           nope : ['lib/turn.html4.js', 'css/flipbook-html4.css']
-      });
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
 
-       $('#flipbook').turn({
-         display: 'double',
-         inclination: 50,
-         when: {
-           turned: function(event, page, pageObj) {
-             alert(‘the current page is ’ + page);
-           }
-         }
-       });
-    </script>
-    <style media="screen">
-
-      html{
-        background-color: black;
-      }
-
-      img {
-        width: auto;
-        height: 49em;
-      }
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/1.jpg)"></div>
+			<div style="background-image:url(pages/2.jpg)"></div>
+			<div style="background-image:url(pages/3.jpg)"></div>
+			<div style="background-image:url(pages/4.jpg)"></div>
+			<div style="background-image:url(pages/5.jpg)"></div>
+			<div style="background-image:url(pages/6.jpg)"></div>
+			<div style="background-image:url(pages/7.jpg)"></div>
+			<div style="background-image:url(pages/8.jpg)"></div>
+			<div style="background-image:url(pages/9.jpg)"></div>
+			<div style="background-image:url(pages/10.jpg)"></div>
+			<div style="background-image:url(pages/11.jpg)"></div>
+			<div style="background-image:url(pages/12.jpg)"></div>
+		</div>
+	</div>
+</div>
 
 
-      #flipbook{
-         width:800px;
-         height:600px;
-      }
+<script type="text/javascript">
 
-      #flipbook .page{
-         width:400px;
-         height:600px;
-      }
+function loadApp() {
 
-    </style>
-  </head>
-  <body>
-    <div id=”flipbook”>
-      <div class="page"><img src="images/cover.jpg"></div>
-      <div>THE LOPEZ BROTHERS had rougher hands than most kids.  The white of their fingernails was seldom unaccompanied by dirt, the stretches of skin between their knuckles were coated by small nicks, scabs, scars, and bruises, and, if they weren’t especially thorough with their scrubbing, their palms would smell of whatever kind of animal they handled last — although they were among few who could effectively distinguish between them.  Today, their hands smelled of fish and tadpoles. </div>
-      <div>Page 3</div>
-      <div>Page 4</div>
-    </div>
+	// Create the flipbook
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'>
-  </script>
-  </body>
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+
+			// Enable gradients
+
+			gradients: true,
+
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../../lib/turn.js'],
+	nope: ['../../lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
 </html>
