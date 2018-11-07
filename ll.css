@@ -10,7 +10,7 @@ body {
   height: 100%; }
 
 .scene {
-  width: 50%;
+  width: 50vw;
   height: 100vh;
   margin: 16px auto;
   -webkit-perspective: 2000px;
