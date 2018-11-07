@@ -78,3 +78,9 @@ p {
   margin: 48px;
   line-height: 20px;
 }
+
+.end{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
