@@ -9,8 +9,8 @@ body {
   height: 100%; }
 
 .scene {
-  width: 480px;
-  height: 640px;
+  width: 900px;
+  height: auto;
   margin: 16px auto;
   -webkit-perspective: 2000px;
   perspective: 2000px;
