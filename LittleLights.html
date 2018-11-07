@@ -10,6 +10,15 @@
            nope : ['lib/turn.html4.js', 'css/flipbook-html4.css']
       });
 
+       $('#flipbook').turn({
+         display: 'double',
+         inclination: 50,
+         when: {
+           turned: function(event, page, pageObj) {
+             alert(‘the current page is ’ + page);
+           }
+         }
+       });
     </script>
     <style media="screen">
 
