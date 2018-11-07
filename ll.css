@@ -15,6 +15,7 @@ body {
   margin: 0;
   -webkit-perspective: 2000px;
   perspective: 2000px;
+  background-color: #f9f3e9;
 }
 
 .book {
@@ -23,6 +24,7 @@ body {
   height: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  background-color: #f9f3e9;
 }
 
 .page {
