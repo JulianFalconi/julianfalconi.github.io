@@ -1,4 +1,5 @@
 html {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -6,12 +7,11 @@ body {
   background: black;
   margin: 0;
   width: 100%;
-  height: 100%;
-  }
+  height: 100%; }
 
 .scene {
-  width: 900px;
-  height: 800px;
+  width: 480px;
+  height: 640px;
   margin: 16px auto;
   -webkit-perspective: 2000px;
   perspective: 2000px;
@@ -31,7 +31,9 @@ body {
   color: black;
   width: 100%;
   height: 100%;
+
   -webkit-transition: 1.5s -webkit-transform;
+
   transition: 1.5s transform;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -55,6 +57,7 @@ body {
   background: -webkit-linear-gradient(top left, #fff, #ccc);
   background: linear-gradient(to bottom right, #fff, #ccc);
 }
+
 .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -63,10 +66,12 @@ body {
 .page.active {
   z-index: 1;
 }
+
 .page.flipped {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
+
 .page.flipped:last-of-type {
   z-index: 1;
 }
